@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the humanitarianresponse indicators feature.
+ */
+
+include_once('humanitarianresponse_indicators.features.inc');
