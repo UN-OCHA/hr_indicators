@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * humanitarianresponse_indicators.features.field_base.inc
+ * hr_indicators.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function humanitarianresponse_indicators_field_default_field_bases() {
+function hr_indicators_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_cluster'

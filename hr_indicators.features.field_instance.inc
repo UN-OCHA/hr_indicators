@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * humanitarianresponse_indicators.features.field_instance.inc
+ * hr_indicators.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function humanitarianresponse_indicators_field_default_field_instances() {
+function hr_indicators_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-indicator_registry-body'

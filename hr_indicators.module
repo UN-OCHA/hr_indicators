@@ -4,4 +4,4 @@
  * Code for the humanitarianresponse indicators feature.
  */
 
-include_once('humanitarianresponse_indicators.features.inc');
+include_once('hr_indicators.features.inc');
