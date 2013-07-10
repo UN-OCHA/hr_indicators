@@ -13,118 +13,115 @@ function hr_indicators_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_indicator_registry';
+  $strongarm->name = 'comment_anonymous_indicator';
   $strongarm->value = 0;
-  $export['comment_anonymous_indicator_registry'] = $strongarm;
+  $export['comment_anonymous_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_indicator_registry';
-  $strongarm->value = 0;
-  $export['comment_default_mode_indicator_registry'] = $strongarm;
+  $strongarm->name = 'comment_default_mode_indicator';
+  $strongarm->value = 1;
+  $export['comment_default_mode_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_indicator_registry';
-  $strongarm->value = '10';
-  $export['comment_default_per_page_indicator_registry'] = $strongarm;
+  $strongarm->name = 'comment_default_per_page_indicator';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_indicator_registry';
-  $strongarm->value = 0;
-  $export['comment_form_location_indicator_registry'] = $strongarm;
+  $strongarm->name = 'comment_form_location_indicator';
+  $strongarm->value = 1;
+  $export['comment_form_location_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_indicator_registry';
+  $strongarm->name = 'comment_indicator';
   $strongarm->value = '1';
-  $export['comment_indicator_registry'] = $strongarm;
+  $export['comment_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_indicator_registry';
-  $strongarm->value = '0';
-  $export['comment_preview_indicator_registry'] = $strongarm;
+  $strongarm->name = 'comment_preview_indicator';
+  $strongarm->value = '1';
+  $export['comment_preview_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_indicator_registry';
-  $strongarm->value = 0;
-  $export['comment_subject_field_indicator_registry'] = $strongarm;
+  $strongarm->name = 'comment_subject_field_indicator';
+  $strongarm->value = 1;
+  $export['comment_subject_field_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__indicator_registry';
+  $strongarm->name = 'field_bundle_settings_node__indicator';
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
-        'title' => array(
-          'weight' => '4',
-        ),
         'path' => array(
-          'weight' => '22',
+          'weight' => '20',
         ),
       ),
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__indicator_registry'] = $strongarm;
+  $export['field_bundle_settings_node__indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_indicator_registry';
+  $strongarm->name = 'language_content_type_indicator';
   $strongarm->value = '0';
-  $export['language_content_type_indicator_registry'] = $strongarm;
+  $export['language_content_type_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_indicator_registry';
+  $strongarm->name = 'menu_options_indicator';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_indicator_registry'] = $strongarm;
+  $export['menu_options_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_indicator_registry';
+  $strongarm->name = 'menu_parent_indicator';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_indicator_registry'] = $strongarm;
+  $export['menu_parent_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_indicator_registry';
+  $strongarm->name = 'node_options_indicator';
   $strongarm->value = array(
     0 => 'status',
     1 => 'promote',
   );
-  $export['node_options_indicator_registry'] = $strongarm;
+  $export['node_options_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_indicator_registry';
+  $strongarm->name = 'node_preview_indicator';
   $strongarm->value = '1';
-  $export['node_preview_indicator_registry'] = $strongarm;
+  $export['node_preview_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_indicator_registry';
-  $strongarm->value = 1;
-  $export['node_submitted_indicator_registry'] = $strongarm;
+  $strongarm->name = 'node_submitted_indicator';
+  $strongarm->value = 0;
+  $export['node_submitted_indicator'] = $strongarm;
 
   return $export;
 }

@@ -48,168 +48,6 @@ function hr_indicators_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_desc_unit_measure'
-  $field_bases['field_desc_unit_measure'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_desc_unit_measure',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'text_long',
-  );
-
-  // Exported field_base: 'field_disaggegation'
-  $field_bases['field_disaggegation'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_disaggegation',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'text_long',
-  );
-
-  // Exported field_base: 'field_domain'
-  $field_bases['field_domain'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_domain',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'Agriculture and Livestock' => 'Agriculture and Livestock',
-        'Availability' => 'Availability',
-        'Food Access' => 'Food Access',
-        'Food Assistance' => 'Food Assistance',
-        'Income Access' => 'Income Access',
-        'Utilization' => 'Utilization',
-      ),
-      'allowed_values_function' => '',
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_guidance'
-  $field_bases['field_guidance'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_guidance',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'text_long',
-  );
-
-  // Exported field_base: 'field_guidance_precrisis'
-  $field_bases['field_guidance_precrisis'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_guidance_precrisis',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'text_long',
-  );
-
   // Exported field_base: 'field_ind_code'
   $field_bases['field_ind_code'] = array(
     'active' => 1,
@@ -241,6 +79,70 @@ function hr_indicators_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_ind_comments'
+  $field_bases['field_ind_comments'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ind_comments',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_ind_data_sources'
+  $field_bases['field_ind_data_sources'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ind_data_sources',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_ind_denominator'
@@ -275,13 +177,115 @@ function hr_indicators_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_ind_gen_guidance'
-  $field_bases['field_ind_gen_guidance'] = array(
+  // Exported field_base: 'field_ind_disaggregation'
+  $field_bases['field_ind_disaggregation'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ind_gen_guidance',
+    'field_name' => 'field_ind_disaggregation',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_ind_domain'
+  $field_bases['field_ind_domain'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ind_domain',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'ind_domain',
+          'parent' => 0,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_ind_general_guidance'
+  $field_bases['field_ind_general_guidance'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ind_general_guidance',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_ind_guidance_phases'
+  $field_bases['field_ind_guidance_phases'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ind_guidance_phases',
     'field_permissions' => array(
       'type' => 0,
     ),
@@ -344,6 +348,9 @@ function hr_indicators_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ind_numerator',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -366,13 +373,13 @@ function hr_indicators_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_ind_report_monitoring'
-  $field_bases['field_ind_report_monitoring'] = array(
+  // Exported field_base: 'field_ind_response'
+  $field_bases['field_ind_response'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ind_report_monitoring',
+    'field_name' => 'field_ind_response',
     'field_permissions' => array(
       'type' => 0,
     ),
@@ -396,69 +403,42 @@ function hr_indicators_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_ind_source'
-  $field_bases['field_ind_source'] = array(
+  // Exported field_base: 'field_ind_standards'
+  $field_bases['field_ind_standards'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ind_source',
+    'field_name' => 'field_ind_standards',
     'field_permissions' => array(
       'type' => 0,
     ),
     'foreign keys' => array(
-      'format' => array(
+      'tid' => array(
         'columns' => array(
-          'format' => 'format',
+          'tid' => 'tid',
         ),
-        'table' => 'filter_format',
+        'table' => 'taxonomy_term_data',
       ),
     ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'taxonomy',
     'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 100,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_ind_status_comment'
-  $field_bases['field_ind_status_comment'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ind_status_comment',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'ind_standard',
+          'parent' => 0,
         ),
-        'table' => 'filter_format',
       ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
       'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_ind_threshold'
@@ -488,40 +468,48 @@ function hr_indicators_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'entity_translation_sync' => FALSE,
+      'max_length' => 255,
     ),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text',
   );
 
-  // Exported field_base: 'field_ind_type'
-  $field_bases['field_ind_type'] = array(
+  // Exported field_base: 'field_ind_types'
+  $field_bases['field_ind_types'] = array(
     'active' => 1,
-    'cardinality' => 3,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ind_type',
+    'field_name' => 'field_ind_types',
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
     'indexes' => array(
-      'value' => array(
-        0 => 'value',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'list',
+    'module' => 'taxonomy',
     'settings' => array(
       'allowed_values' => array(
-        'Baseline(Needs Assessment)' => 'Baseline(Needs Assessment)',
-        'Output' => 'Output',
-        'Outcome' => 'Outcome',
+        0 => array(
+          'vocabulary' => 'ind_type',
+          'parent' => 0,
+        ),
       ),
-      'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'list_text',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_ind_unit'
@@ -534,98 +522,64 @@ function hr_indicators_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
     'indexes' => array(
-      'value' => array(
-        0 => 'value',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'list',
+    'module' => 'taxonomy',
     'settings' => array(
       'allowed_values' => array(
-        'Not applicable' => 'Not Applicable',
-        'Consumption' => 'Consumption',
-        'Food Source' => 'Food Source',
-        'Households' => 'Households',
-        'Income' => 'Income',
-        'Expenditure' => 'Expenditure',
-        'Communities' => 'Communities',
-        'Commodity Prices' => 'Commodity Prices',
-        'Production' => 'Production',
-        'Households or Communities' => 'Households or Communities',
-        'Diseases outbreaks' => 'Diseases outbreaks',
-        'Beneficiaries' => 'Beneficiaries',
-        'Hectares' => 'Hectares',
-        'Tonnes' => 'Tonnes',
-        'Food' => 'Food',
+        0 => array(
+          'vocabulary' => 'ind_unit',
+          'parent' => 0,
+        ),
       ),
-      'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'list_text',
+    'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_standards'
-  $field_bases['field_standards'] = array(
+  // Exported field_base: 'field_ind_unit_desc'
+  $field_bases['field_ind_unit_desc'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_standards',
+    'field_name' => 'field_ind_unit_desc',
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
     'indexes' => array(
-      'value' => array(
-        0 => 'value',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'list',
+    'module' => 'text',
     'settings' => array(
-      'allowed_values' => array(
-        'SPHERE' => 'SPHERE',
-        'INEE' => 'INEE',
-        'ETC' => 'ETC',
-        'Not Applicable' => 'Not Applicable',
-      ),
-      'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_sub_domain'
-  $field_bases['field_sub_domain'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_sub_domain',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'N/A' => 'N/A',
-      ),
-      'allowed_values_function' => '',
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
+    'type' => 'text_long',
   );
 
   return $field_bases;
