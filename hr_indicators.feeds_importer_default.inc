@@ -70,7 +70,7 @@ function hr_indicators_feeds_importer_default() {
           ),
           5 => array(
             'source' => 'Description',
-            'target' => 'body',
+            'target' => 'body:et:en',
             'unique' => FALSE,
           ),
           6 => array(
@@ -135,17 +135,22 @@ function hr_indicators_feeds_importer_default() {
             'unique' => FALSE,
           ),
           18 => array(
-            'source' => 'Comments',
-            'target' => 'comment',
+            'source' => 'Guidance for pre-crisis',
+            'target' => 'field_ind_guidance_baseline',
             'unique' => FALSE,
           ),
           19 => array(
+            'source' => 'Comments',
+            'target' => 'field_ind_comments',
+            'unique' => FALSE,
+          ),
+          20 => array(
             'source' => 'Data Sources',
             'target' => 'field_ind_data_sources',
             'unique' => FALSE,
           ),
-          20 => array(
-            'source' => 'Clusters',
+          21 => array(
+            'source' => 'Sector cross-tagging',
             'target' => 'field_clusters',
             'unique' => FALSE,
           ),

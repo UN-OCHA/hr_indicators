@@ -68,7 +68,7 @@ function hr_indicators_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '20',
+          'weight' => '21',
         ),
       ),
       'display' => array(),

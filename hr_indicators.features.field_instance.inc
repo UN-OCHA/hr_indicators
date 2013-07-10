@@ -145,7 +145,7 @@ function hr_indicators_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_clusters',
-    'label' => 'Clusters',
+    'label' => 'Sector cross-tagging',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -158,7 +158,7 @@ function hr_indicators_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 19,
+      'weight' => 20,
     ),
   );
 
@@ -292,7 +292,7 @@ function hr_indicators_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -359,7 +359,7 @@ function hr_indicators_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -599,6 +599,73 @@ function hr_indicators_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'node-indicator-field_ind_guidance_baseline'
+  $field_instances['node-indicator-field_ind_guidance_baseline'] = array(
+    'bundle' => 'indicator',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ind_guidance_baseline',
+    'label' => 'Guidance for pre-crisis/baseline',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+          'simple' => 'simple',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'simple' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 17,
     ),
   );
 
@@ -1112,7 +1179,6 @@ function hr_indicators_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Cluster');
-  t('Clusters');
   t('Code');
   t('Comments');
   t('Data Sources');
@@ -1121,10 +1187,12 @@ function hr_indicators_field_default_field_instances() {
   t('Disaggregation');
   t('Domain');
   t('General guidance');
+  t('Guidance for pre-crisis/baseline');
   t('Guidance on phases');
   t('Indicator used for response monitoring ?');
   t('Key Indicator');
   t('Numerator');
+  t('Sector cross-tagging');
   t('Standards');
   t('Threshold / Standard');
   t('Title');
