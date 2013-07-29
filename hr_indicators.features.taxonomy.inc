@@ -13,7 +13,7 @@ function hr_indicators_taxonomy_default_vocabularies() {
       'name' => 'Indicator Domain',
       'machine_name' => 'ind_domain',
       'description' => '',
-      'hierarchy' => 0,
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(

@@ -529,7 +529,9 @@ function hr_indicators_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'hs_taxonomy',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
       'type' => 'taxonomy_hs',
       'weight' => 2,
     ),
@@ -931,7 +933,7 @@ function hr_indicators_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -979,9 +981,9 @@ function hr_indicators_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 5,
       ),
-      'type' => 'text_textfield',
+      'type' => 'text_textarea',
       'weight' => 14,
     ),
   );
