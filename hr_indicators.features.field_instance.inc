@@ -10,9 +10,9 @@
 function hr_indicators_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-indicator-body'
-  $field_instances['node-indicator-body'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-body'
+  $field_instances['node-hr_indicator-body'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -24,6 +24,12 @@ function hr_indicators_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -31,40 +37,14 @@ function hr_indicators_field_default_field_instances() {
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Description / Rationale',
+    'label' => 'Description/Rationale',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'display_summary' => 1,
       'entity_translation_sync' => FALSE,
       'text_processing' => 1,
@@ -82,99 +62,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_cluster'
-  $field_instances['node-indicator-field_cluster'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_code'
+  $field_instances['node-hr_indicator-field_ind_code'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_cluster',
-    'label' => 'Cluster',
-    'required' => 1,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 1,
-      ),
-      'type' => 'options_select',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance: 'node-indicator-field_clusters'
-  $field_instances['node-indicator-field_clusters'] = array(
-    'bundle' => 'indicator',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 19,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_clusters',
-    'label' => 'Sector cross-tagging',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 1,
-      ),
-      'type' => 'options_select',
-      'weight' => 20,
-    ),
-  );
-
-  // Exported field_instance: 'node-indicator-field_ind_code'
-  $field_instances['node-indicator-field_ind_code'] = array(
-    'bundle' => 'indicator',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -188,33 +94,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Code',
     'required' => 1,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -229,19 +113,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_comments'
-  $field_instances['node-indicator-field_ind_comments'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_comments'
+  $field_instances['node-hr_indicator-field_ind_comments'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 18,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -255,33 +145,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Comments',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -296,19 +164,82 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_data_sources'
-  $field_instances['node-indicator-field_ind_data_sources'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_cross_tagging'
+  $field_instances['node-hr_indicator-field_ind_cross_tagging'] = array(
+    'bundle' => 'hr_indicator',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 19,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ind_cross_tagging',
+    'label' => 'Sector cross-tagging',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'hser',
+      'settings' => array(
+        'editable' => 0,
+      ),
+      'type' => 'hser_hierarchy',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance: 'node-hr_indicator-field_ind_data_sources'
+  $field_instances['node-hr_indicator-field_ind_data_sources'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 17,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -322,33 +253,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Data Sources',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -363,19 +272,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_denominator'
-  $field_instances['node-indicator-field_ind_denominator'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_denominator'
+  $field_instances['node-hr_indicator-field_ind_denominator'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 7,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -389,33 +304,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Denominator',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -430,19 +323,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_disaggregation'
-  $field_instances['node-indicator-field_ind_disaggregation'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_disaggregation'
+  $field_instances['node-hr_indicator-field_ind_disaggregation'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 8,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -456,33 +355,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Disaggregation',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -497,19 +374,28 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_domain'
-  $field_instances['node-indicator-field_ind_domain'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_domain'
+  $field_instances['node-hr_indicator-field_ind_domain'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
+    'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'search_result' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -520,36 +406,50 @@ function hr_indicators_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ind_domain',
-    'label' => 'Domain',
+    'label' => 'Sub-domain',
     'required' => 1,
     'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'hs_taxonomy',
+      'module' => 'hser',
       'settings' => array(
-        'apply_chosen' => 1,
+        'editable' => 0,
       ),
-      'type' => 'taxonomy_hs',
+      'type' => 'hser_hierarchy',
       'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_general_guidance'
-  $field_instances['node-indicator-field_ind_general_guidance'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_general_guidance'
+  $field_instances['node-hr_indicator-field_ind_general_guidance'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 14,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -563,33 +463,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'General guidance',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -604,19 +482,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_guidance_baseline'
-  $field_instances['node-indicator-field_ind_guidance_baseline'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_guidance_baseline'
+  $field_instances['node-hr_indicator-field_ind_guidance_baseline'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 16,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -630,33 +514,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Guidance for pre-crisis/baseline',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -671,19 +533,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_guidance_phases'
-  $field_instances['node-indicator-field_ind_guidance_phases'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_guidance_phases'
+  $field_instances['node-hr_indicator-field_ind_guidance_phases'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 15,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -697,33 +565,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Guidance on phases',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -738,19 +584,29 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_key'
-  $field_instances['node-indicator-field_ind_key'] = array(
-    'bundle' => 'indicator',
-    'default_value' => NULL,
+  // Exported field_instance: 'node-hr_indicator-field_ind_key'
+  $field_instances['node-hr_indicator-field_ind_key'] = array(
+    'bundle' => 'hr_indicator',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 10,
+        'weight' => 9,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -761,7 +617,7 @@ function hr_indicators_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ind_key',
-    'label' => 'Key Indicator',
+    'label' => 'Key indicator',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -770,25 +626,33 @@ function hr_indicators_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'display_label' => 0,
+      ),
       'type' => 'options_buttons',
       'weight' => 10,
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_numerator'
-  $field_instances['node-indicator-field_ind_numerator'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_numerator'
+  $field_instances['node-hr_indicator-field_ind_numerator'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 6,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -802,33 +666,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Numerator',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -843,19 +685,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_response'
-  $field_instances['node-indicator-field_ind_response'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_response'
+  $field_instances['node-hr_indicator-field_ind_response'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 12,
+        'weight' => 10,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -867,7 +715,7 @@ function hr_indicators_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_ind_response',
     'label' => 'Indicator used for response monitoring ?',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -881,19 +729,28 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_standards'
-  $field_instances['node-indicator-field_ind_standards'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_standards'
+  $field_instances['node-hr_indicator-field_ind_standards'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
+    'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 12,
+      ),
+      'search_result' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 13,
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -907,6 +764,14 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Standards',
     'required' => 0,
     'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
@@ -921,19 +786,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_threshold'
-  $field_instances['node-indicator-field_ind_threshold'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_threshold'
+  $field_instances['node-hr_indicator-field_ind_threshold'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 21,
+        'weight' => 13,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -947,33 +818,11 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Threshold / Standard',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -988,19 +837,28 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_types'
-  $field_instances['node-indicator-field_ind_types'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_types'
+  $field_instances['node-hr_indicator-field_ind_types'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
+    'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 11,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1012,8 +870,16 @@ function hr_indicators_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_ind_types',
     'label' => 'Types',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
@@ -1028,19 +894,28 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_unit'
-  $field_instances['node-indicator-field_ind_unit'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_unit'
+  $field_instances['node-hr_indicator-field_ind_unit'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
+    'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 4,
+      ),
+      'search_result' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1054,6 +929,14 @@ function hr_indicators_field_default_field_instances() {
     'label' => 'Unit of Measurement',
     'required' => 0,
     'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
@@ -1068,19 +951,25 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-field_ind_unit_desc'
-  $field_instances['node-indicator-field_ind_unit_desc'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_ind_unit_desc'
+  $field_instances['node-hr_indicator-field_ind_unit_desc'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1091,36 +980,14 @@ function hr_indicators_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ind_unit_desc',
-    'label' => 'Unit of Measurement (Description)',
+    'label' => 'Unit Description',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1135,9 +1002,63 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-indicator-title_field'
-  $field_instances['node-indicator-title_field'] = array(
-    'bundle' => 'indicator',
+  // Exported field_instance: 'node-hr_indicator-field_sector'
+  $field_instances['node-hr_indicator-field_sector'] = array(
+    'bundle' => 'hr_indicator',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sector',
+    'label' => 'Global Cluster',
+    'required' => 1,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'node-hr_indicator-og_group_ref'
+  $field_instances['node-hr_indicator-og_group_ref'] = array(
+    'bundle' => 'hr_indicator',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1146,7 +1067,78 @@ function hr_indicators_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 20,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'og_group_ref',
+    'label' => 'Groups audience',
+    'required' => FALSE,
+    'settings' => array(
+      'behaviors' => array(
+        'og_widget' => array(
+          'admin' => array(
+            'widget_type' => 'entityreference_autocomplete',
+          ),
+          'default' => array(
+            'widget_type' => 'options_select',
+          ),
+          'status' => TRUE,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'view modes' => array(
+      'full' => array(
+        'custom settings' => FALSE,
+        'label' => 'Full',
+        'type' => 'og_list_default',
+      ),
+      'teaser' => array(
+        'custom settings' => FALSE,
+        'label' => 'Teaser',
+        'type' => 'og_list_default',
+      ),
+    ),
+    'widget' => array(
+      'module' => 'og',
+      'settings' => array(),
+      'type' => 'og_complex',
+      'weight' => 21,
+    ),
+  );
+
+  // Exported field_instance: 'node-hr_indicator-title_field'
+  $field_instances['node-hr_indicator-title_field'] = array(
+    'bundle' => 'hr_indicator',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1178,29 +1170,179 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-hr_indicator_domain-name_field'
+  $field_instances['taxonomy_term-hr_indicator_domain-name_field'] = array(
+    'bundle' => 'hr_indicator_domain',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'name_field',
+    'label' => 'Name',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-hr_indicator_standard-name_field'
+  $field_instances['taxonomy_term-hr_indicator_standard-name_field'] = array(
+    'bundle' => 'hr_indicator_standard',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'name_field',
+    'label' => 'Name',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-hr_indicator_type-name_field'
+  $field_instances['taxonomy_term-hr_indicator_type-name_field'] = array(
+    'bundle' => 'hr_indicator_type',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'name_field',
+    'label' => 'Name',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-hr_indicator_unit-name_field'
+  $field_instances['taxonomy_term-hr_indicator_unit-name_field'] = array(
+    'bundle' => 'hr_indicator_unit',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'name_field',
+    'label' => 'Name',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
-  t('Cluster');
   t('Code');
   t('Comments');
   t('Data Sources');
   t('Denominator');
-  t('Description / Rationale');
+  t('Description/Rationale');
   t('Disaggregation');
-  t('Domain');
   t('General guidance');
+  t('Global Cluster');
+  t('Groups audience');
   t('Guidance for pre-crisis/baseline');
   t('Guidance on phases');
   t('Indicator used for response monitoring ?');
-  t('Key Indicator');
+  t('Key indicator');
+  t('Name');
   t('Numerator');
   t('Sector cross-tagging');
   t('Standards');
+  t('Sub-domain');
   t('Threshold / Standard');
   t('Title');
   t('Types');
+  t('Unit Description');
   t('Unit of Measurement');
-  t('Unit of Measurement (Description)');
 
   return $field_instances;
 }

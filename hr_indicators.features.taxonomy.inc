@@ -9,97 +9,37 @@
  */
 function hr_indicators_taxonomy_default_vocabularies() {
   return array(
-    'ind_domain' => array(
+    'hr_indicator_domain' => array(
       'name' => 'Indicator Domain',
-      'machine_name' => 'ind_domain',
+      'machine_name' => 'hr_indicator_domain',
       'description' => '',
-      'hierarchy' => 1,
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
     ),
-    'ind_standard' => array(
+    'hr_indicator_standard' => array(
       'name' => 'Indicator Standard',
-      'machine_name' => 'ind_standard',
+      'machine_name' => 'hr_indicator_standard',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
     ),
-    'ind_type' => array(
+    'hr_indicator_type' => array(
       'name' => 'Indicator Type',
-      'machine_name' => 'ind_type',
+      'machine_name' => 'hr_indicator_type',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
     ),
-    'ind_unit' => array(
+    'hr_indicator_unit' => array(
       'name' => 'Indicator Unit',
-      'machine_name' => 'ind_unit',
+      'machine_name' => 'hr_indicator_unit',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
     ),
   );
 }
