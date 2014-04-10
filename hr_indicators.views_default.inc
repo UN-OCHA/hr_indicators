@@ -41,7 +41,7 @@ function hr_indicators_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Indexed Node: Sector */
+  /* Field: Indexed Node: Global Cluster */
   $handler->display->display_options['fields']['field_sector']['id'] = 'field_sector';
   $handler->display->display_options['fields']['field_sector']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_sector']['field'] = 'field_sector';
@@ -141,7 +141,7 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Indexed Node: Sector */
+  /* Field: Indexed Node: Global Cluster */
   $handler->display->display_options['fields']['field_sector']['id'] = 'field_sector';
   $handler->display->display_options['fields']['field_sector']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_sector']['field'] = 'field_sector';
@@ -272,7 +272,7 @@ function hr_indicators_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Sector'),
+    t('Global Cluster'),
     t('Code'),
     t('Sub-domain'),
     t('Title'),
