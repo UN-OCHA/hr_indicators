@@ -74,6 +74,7 @@ features[taxonomy][] = hr_indicator_domain
 features[taxonomy][] = hr_indicator_standard
 features[taxonomy][] = hr_indicator_type
 features[taxonomy][] = hr_indicator_unit
+features[user_permission][] = use search_api_autocomplete for search_api_views_hr_indicators
 features[variable][] = field_bundle_settings_node__hr_indicator
 features[variable][] = language_content_type_hr_indicator
 features[variable][] = menu_options_hr_indicator
