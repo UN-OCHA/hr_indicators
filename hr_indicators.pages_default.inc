@@ -51,7 +51,7 @@ function hr_indicators_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'bootstrap_twocol_stacked';
+  $display->layout = 'radix_boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -77,7 +77,7 @@ function hr_indicators_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c443a84a-2297-4eba-8972-4dad3e062950';
-    $pane->panel = 'top';
+    $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
     $pane->subtype = 'hr_indicators-table';
     $pane->shown = TRUE;
@@ -93,7 +93,7 @@ function hr_indicators_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c443a84a-2297-4eba-8972-4dad3e062950';
     $display->content['new-c443a84a-2297-4eba-8972-4dad3e062950'] = $pane;
-    $display->panels['top'][0] = 'new-c443a84a-2297-4eba-8972-4dad3e062950';
+    $display->panels['contentmain'][0] = 'new-c443a84a-2297-4eba-8972-4dad3e062950';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-c443a84a-2297-4eba-8972-4dad3e062950';
   $handler->conf['display'] = $display;
