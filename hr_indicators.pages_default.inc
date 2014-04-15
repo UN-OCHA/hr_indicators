@@ -53,23 +53,7 @@ function hr_indicators_default_page_manager_pages() {
   $display = new panels_display();
   $display->layout = 'radix_boxton';
   $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'top' => array(
-        'column_type' => 'col-sm',
-        'column_size' => '12',
-        'offset_type' => 'col-lg-offset',
-        'offset_size' => '0',
-      ),
-      'default' => NULL,
-      'left' => NULL,
-      'right' => NULL,
-      'bottom' => NULL,
-    ),
-    'top' => array(
-      'style' => 'bootstrap_region',
-    ),
-  );
+  $display->panel_settings = array();
   $display->cache = array();
   $display->title = '';
   $display->uuid = '0ecab9a0-d86e-46a9-a32f-9f1bc3420dad';
