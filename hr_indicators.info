@@ -69,7 +69,6 @@ features[field_instance][] = taxonomy_term-hr_indicator_standard-name_field
 features[field_instance][] = taxonomy_term-hr_indicator_type-name_field
 features[field_instance][] = taxonomy_term-hr_indicator_unit-name_field
 features[node][] = hr_indicator
-features[page_manager_pages][] = hr_indicators
 features[search_api_autocomplete_search][] = search_api_views_hr_indicators
 features[taxonomy][] = hr_indicator_domain
 features[taxonomy][] = hr_indicator_standard
