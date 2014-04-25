@@ -22,7 +22,7 @@ function hr_indicators_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1023,13 +1023,13 @@ function hr_indicators_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 22,
+        'weight' => 0,
       ),
       'search_result' => array(
         'label' => 'above',
