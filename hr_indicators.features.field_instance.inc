@@ -212,11 +212,17 @@ function hr_indicators_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'hser',
+      'module' => 'shs',
       'settings' => array(
-        'editable' => 0,
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 0,
+          'force_deepest' => 0,
+          'node_count' => 0,
+          'use_chosen' => 'always',
+        ),
       ),
-      'type' => 'hser_hierarchy',
+      'type' => 'taxonomy_shs',
       'weight' => 20,
     ),
   );
@@ -422,11 +428,17 @@ function hr_indicators_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'hser',
+      'module' => 'shs',
       'settings' => array(
-        'editable' => 0,
+        'shs' => array(
+          'create_new_levels' => 0,
+          'create_new_terms' => 0,
+          'force_deepest' => 0,
+          'node_count' => 0,
+          'use_chosen' => 'always',
+        ),
       ),
-      'type' => 'hser_hierarchy',
+      'type' => 'taxonomy_shs',
       'weight' => 2,
     ),
   );
