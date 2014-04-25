@@ -63,6 +63,18 @@ function hr_indicators_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-6',
         ),
+        'facetapi-bHwNwkwj2M84tVpx1LhffUfGnLOMFTpe' => array(
+          'module' => 'facetapi',
+          'delta' => 'bHwNwkwj2M84tVpx1LhffUfGnLOMFTpe',
+          'region' => 'sidebar_first',
+          'weight' => '-5',
+        ),
+        'facetapi-PtnzOYGAQ4r54BwtIYyy1V9aQHo49u6D' => array(
+          'module' => 'facetapi',
+          'delta' => 'PtnzOYGAQ4r54BwtIYyy1V9aQHo49u6D',
+          'region' => 'sidebar_first',
+          'weight' => '-4',
+        ),
       ),
     ),
   );
