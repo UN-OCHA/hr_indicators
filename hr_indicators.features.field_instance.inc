@@ -1014,60 +1014,6 @@ function hr_indicators_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-hr_indicator-field_sector'
-  $field_instances['node-hr_indicator-field_sector'] = array(
-    'bundle' => 'hr_indicator',
-    'default_value' => NULL,
-    'default_value_function' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 1,
-      ),
-      'search_result' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sector',
-    'label' => 'Global Cluster (deprecated)',
-    'required' => 0,
-    'settings' => array(
-      'behaviors' => array(
-        'prepopulate' => array(
-          'status' => 0,
-        ),
-      ),
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 1,
-      ),
-      'type' => 'options_select',
-      'weight' => 0,
-    ),
-  );
-
   // Exported field_instance: 'node-hr_indicator-field_sectors'
   $field_instances['node-hr_indicator-field_sectors'] = array(
     'bundle' => 'hr_indicator',
@@ -1403,7 +1349,6 @@ function hr_indicators_field_default_field_instances() {
   t('Description/Rationale');
   t('Disaggregation');
   t('General guidance');
-  t('Global Cluster (deprecated)');
   t('Global Clusters');
   t('Groups audience');
   t('Guidance for pre-crisis/baseline');

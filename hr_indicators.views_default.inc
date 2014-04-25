@@ -41,13 +41,13 @@ function hr_indicators_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Indexed Node: Global Cluster */
-  $handler->display->display_options['fields']['field_sector']['id'] = 'field_sector';
-  $handler->display->display_options['fields']['field_sector']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['field_sector']['field'] = 'field_sector';
-  $handler->display->display_options['fields']['field_sector']['link_to_entity'] = 0;
-  $handler->display->display_options['fields']['field_sector']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_sector']['bypass_access'] = 0;
+  /* Field: Indexed Node: Global Clusters */
+  $handler->display->display_options['fields']['field_sectors']['id'] = 'field_sectors';
+  $handler->display->display_options['fields']['field_sectors']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_sectors']['field'] = 'field_sectors';
+  $handler->display->display_options['fields']['field_sectors']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_sectors']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_sectors']['bypass_access'] = 0;
   /* Field: Indexed Node: Code */
   $handler->display->display_options['fields']['field_ind_code']['id'] = 'field_ind_code';
   $handler->display->display_options['fields']['field_ind_code']['table'] = 'search_api_index_default_node_index';
@@ -134,13 +134,14 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Indexed Node: Global Cluster */
-  $handler->display->display_options['fields']['field_sector']['id'] = 'field_sector';
-  $handler->display->display_options['fields']['field_sector']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['field_sector']['field'] = 'field_sector';
-  $handler->display->display_options['fields']['field_sector']['link_to_entity'] = 0;
-  $handler->display->display_options['fields']['field_sector']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_sector']['bypass_access'] = 0;
+  /* Field: Indexed Node: Global Clusters */
+  $handler->display->display_options['fields']['field_sectors']['id'] = 'field_sectors';
+  $handler->display->display_options['fields']['field_sectors']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_sectors']['field'] = 'field_sectors';
+  $handler->display->display_options['fields']['field_sectors']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_sectors']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_sectors']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_sectors']['bypass_access'] = 0;
   /* Field: Indexed Node: Code */
   $handler->display->display_options['fields']['field_ind_code']['id'] = 'field_ind_code';
   $handler->display->display_options['fields']['field_ind_code']['table'] = 'search_api_index_default_node_index';
@@ -283,14 +284,14 @@ function hr_indicators_views_default_views() {
     'field_ind_data_sources' => 'field_ind_data_sources',
   );
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Indexed Node: Global Cluster */
-  $handler->display->display_options['fields']['field_sector']['id'] = 'field_sector';
-  $handler->display->display_options['fields']['field_sector']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['field_sector']['field'] = 'field_sector';
-  $handler->display->display_options['fields']['field_sector']['label'] = 'Cluster';
-  $handler->display->display_options['fields']['field_sector']['link_to_entity'] = 0;
-  $handler->display->display_options['fields']['field_sector']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_sector']['bypass_access'] = 0;
+  /* Field: Indexed Node: Global Clusters */
+  $handler->display->display_options['fields']['field_sectors']['id'] = 'field_sectors';
+  $handler->display->display_options['fields']['field_sectors']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_sectors']['field'] = 'field_sectors';
+  $handler->display->display_options['fields']['field_sectors']['label'] = 'Clusters';
+  $handler->display->display_options['fields']['field_sectors']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_sectors']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_sectors']['bypass_access'] = 0;
   /* Field: Indexed Node: Code */
   $handler->display->display_options['fields']['field_ind_code']['id'] = 'field_ind_code';
   $handler->display->display_options['fields']['field_ind_code']['table'] = 'search_api_index_default_node_index';
@@ -435,7 +436,7 @@ function hr_indicators_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Global Cluster'),
+    t('Global Clusters'),
     t('Code'),
     t('Sub-domain'),
     t('Title'),
@@ -461,7 +462,7 @@ function hr_indicators_views_default_views() {
     t('Data Sources'),
     t('Sector cross-tagging'),
     t('XML'),
-    t('Cluster'),
+    t('Clusters'),
     t('Sub Domain'),
     t('Guidance for pre crisis'),
     t('Sector cross tagging'),
