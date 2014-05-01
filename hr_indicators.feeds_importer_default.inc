@@ -328,6 +328,11 @@ function hr_indicators_feeds_importer_default() {
             'target' => 'field_sectors:label',
             'unique' => FALSE,
           ),
+          2 => array(
+            'source' => 'Sector cross-tagging',
+            'target' => 'field_ind_cross_tagging:label',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'plain_text',
