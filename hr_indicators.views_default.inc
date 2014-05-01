@@ -31,11 +31,37 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'nid' => 'nid',
+    'field_sectors' => 'field_sectors',
+    'field_ind_code' => 'field_ind_code',
+    'field_ind_domain' => 'field_ind_domain',
+    'title' => 'title',
+    'body' => 'body',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'nid' => array(
+    'field_sectors' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_ind_code' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_ind_domain' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'title' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'body' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -73,6 +99,10 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Sort criterion: Indexed Node: Code */
+  $handler->display->display_options['sorts']['field_ind_code']['id'] = 'field_ind_code';
+  $handler->display->display_options['sorts']['field_ind_code']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['sorts']['field_ind_code']['field'] = 'field_ind_code';
   /* Contextual filter: Indexed Node: Groups audience */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
