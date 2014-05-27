@@ -160,7 +160,7 @@ function hr_indicators_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_hr_indicator_pattern';
-  $strongarm->value = '[node:og-group-ref:url:path]/indicator/[node:field_ind_code]';
+  $strongarm->value = '[node:og-group-ref:0:url:path]/indicator/[node:field_ind_code]';
   $export['pathauto_node_hr_indicator_pattern'] = $strongarm;
 
   return $export;
