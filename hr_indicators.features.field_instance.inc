@@ -1350,7 +1350,6 @@ function hr_indicators_field_default_field_instances() {
   t('Disaggregation');
   t('General guidance');
   t('Global Clusters');
-  t('Groups audience');
   t('Guidance for pre-crisis/baseline');
   t('Guidance on phases');
   t('Indicator used for response monitoring ?');
@@ -1358,6 +1357,7 @@ function hr_indicators_field_default_field_instances() {
   t('Name');
   t('Numerator');
   t('Sector cross-tagging');
+  t('Space(s)');
   t('Standards');
   t('Sub-domain');
   t('Threshold / Standard');

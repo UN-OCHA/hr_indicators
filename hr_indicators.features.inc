@@ -54,4 +54,3 @@ function hr_indicators_node_info() {
   );
   return $items;
 }
-
