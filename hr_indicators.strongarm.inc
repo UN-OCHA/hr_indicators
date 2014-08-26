@@ -59,6 +59,9 @@ function hr_indicators_strongarm() {
         'redirect' => array(
           'weight' => '23',
         ),
+        'language' => array(
+          'weight' => '-10',
+        ),
       ),
       'display' => array(),
     ),
