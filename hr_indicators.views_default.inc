@@ -103,7 +103,7 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['sorts']['field_ind_code']['id'] = 'field_ind_code';
   $handler->display->display_options['sorts']['field_ind_code']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['sorts']['field_ind_code']['field'] = 'field_ind_code';
-  /* Contextual filter: Indexed Node: Space(s) */
+  /* Contextual filter: Indexed Node: Groups audience */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['arguments']['og_group_ref']['field'] = 'og_group_ref';
@@ -193,6 +193,7 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = 'Description';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
@@ -276,7 +277,7 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['fields']['field_ind_cross_tagging']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_ind_cross_tagging']['bypass_access'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Indexed Node: Space(s) */
+  /* Contextual filter: Indexed Node: Groups audience */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['arguments']['og_group_ref']['field'] = 'og_group_ref';
@@ -436,7 +437,7 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['fields']['url']['display_as_link'] = FALSE;
   $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Indexed Node: Space(s) */
+  /* Contextual filter: Indexed Node: Groups audience */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['arguments']['og_group_ref']['field'] = 'og_group_ref';
