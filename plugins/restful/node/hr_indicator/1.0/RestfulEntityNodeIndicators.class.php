@@ -31,6 +31,17 @@ class RestfulEntityNodeIndicators extends \RestfulEntityBaseNode {
   public function publicFieldsInfo() {
     $public_fields = parent::publicFieldsInfo();
 
+    $public_fields['global_clusters'] = array(
+      'property' => 'field_sectors',
+      'resource' => array(
+        'hr_sector' => 'global_clusters',
+      ),
+    );
+
+    $public_fields['code'] = array(
+      'property' => 'field_ind_code',
+    );
+
     /*$public_fields['homepage'] = array(
       'property' => 'field_website',
       'sub_property' => 'url',
