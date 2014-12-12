@@ -53,6 +53,17 @@ class RestfulEntityNodeIndicators extends \RestfulEntityBaseNode {
       'property' => 'body',
     );
 
+    $public_fields['unit'] = array(
+      'property' => 'field_ind_unit',
+      'resource' => array(
+        'hr_indicator_unit' => 'indicator_units',
+      ),
+    );
+
+    $public_fields['unit_description'] = array(
+      'property' => 'field_ind_unit_desc',
+    );
+
     /*$public_fields['homepage'] = array(
       'property' => 'field_website',
       'sub_property' => 'url',
