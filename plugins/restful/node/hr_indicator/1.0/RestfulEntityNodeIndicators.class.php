@@ -76,6 +76,28 @@ class RestfulEntityNodeIndicators extends \RestfulEntityBaseNode {
       'property' => 'field_ind_disaggregation',
     );
 
+    $public_fields['key'] = array(
+      'property' => 'field_ind_key',
+    );
+
+    $public_fields['types'] = array(
+      'property' => 'field_ind_types',
+      'resource' => array(
+        'hr_indicator_type' => 'indicator_types',
+      ),
+    );
+
+    $public_fields['response_monitoring'] = array(
+      'property' => 'field_ind_response',
+    );
+
+    $public_fields['standards'] = array(
+      'property' => 'field_ind_standards',
+      'resource' => array(
+        'hr_indicator_standard' => 'indicator_standards',
+      ),
+    );
+
     /*$public_fields['homepage'] = array(
       'property' => 'field_website',
       'sub_property' => 'url',
