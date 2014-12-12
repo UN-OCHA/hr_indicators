@@ -98,37 +98,36 @@ class RestfulEntityNodeIndicators extends \RestfulEntityBaseNode {
       ),
     );
 
-    /*$public_fields['homepage'] = array(
-      'property' => 'field_website',
-      'sub_property' => 'url',
+    $public_fields['threshold'] = array(
+      'property' => 'field_ind_threshold',
     );
 
-    $public_fields['email'] = array(
-      'property' => 'field_email',
+    $public_fields['guidance_phases'] = array(
+      'property' => 'field_ind_guidance_phases',
     );
 
-    $public_fields['type'] = array(
-      'property' => 'field_operation_type',
+    $public_fields['general_guidance'] = array(
+      'property' => 'field_ind_general_guidance',
     );
 
-    $public_fields['status'] = array(
-      'property' => 'field_operation_status',
+    $public_fields['guidance_baseline'] = array(
+      'property' => 'field_ind_guidance_baseline',
     );
 
-    $public_fields['country'] = array(
-      'property' => 'field_country',
+    $public_fields['comments'] = array(
+      'property' => 'field_ind_comments',
+    );
+
+    $public_fields['data_sources'] = array(
+      'property' => 'field_ind_data_sources',
+    );
+
+    $public_fields['sector_cross_tagging'] = array(
+      'property' => 'field_ind_cross_tagging',
       'resource' => array(
-        'hr_location' => 'locations',
+        'hr_indicator_domain' => 'indicator_domains',
       ),
     );
-
-    $public_fields['launch_date'] = array(
-      'property' => 'field_launch_date',
-    );
-
-    $public_fields['url'] = array(
-      'property' => 'url',
-    );*/
 
     return $public_fields;
   }
