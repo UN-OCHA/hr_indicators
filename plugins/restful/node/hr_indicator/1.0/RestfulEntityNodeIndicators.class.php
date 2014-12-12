@@ -102,7 +102,7 @@ class RestfulEntityNodeIndicators extends \RestfulEntityBaseNode {
       'property' => 'field_ind_threshold',
     );
 
-    $public_fields['guidance_phases'] = array(
+    $public_fields['guidance_phases'] = array(
       'property' => 'field_ind_guidance_phases',
     );
 
