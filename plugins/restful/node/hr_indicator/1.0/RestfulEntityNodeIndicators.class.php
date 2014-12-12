@@ -64,6 +64,18 @@ class RestfulEntityNodeIndicators extends \RestfulEntityBaseNode {
       'property' => 'field_ind_unit_desc',
     );
 
+    $public_fields['numerator'] = array(
+      'property' => 'field_ind_numerator',
+    );
+
+    $public_fields['denominator'] = array(
+      'property' => 'field_ind_denominator',
+    );
+
+    $public_fields['disaggregation'] = array(
+      'property' => 'field_ind_disaggregation',
+    );
+
     /*$public_fields['homepage'] = array(
       'property' => 'field_website',
       'sub_property' => 'url',
