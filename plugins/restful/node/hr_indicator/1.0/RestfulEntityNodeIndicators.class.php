@@ -129,6 +129,10 @@ class RestfulEntityNodeIndicators extends \RestfulEntityBaseNode {
       ),
     );
 
+    $public_fields['url'] = array(
+      'property' => 'url',
+    );
+
     return $public_fields;
   }
 
