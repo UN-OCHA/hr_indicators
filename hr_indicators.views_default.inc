@@ -103,7 +103,7 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['sorts']['field_ind_code']['id'] = 'field_ind_code';
   $handler->display->display_options['sorts']['field_ind_code']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['sorts']['field_ind_code']['field'] = 'field_ind_code';
-  /* Contextual filter: Indexed Node: Groups audience */
+  /* Contextual filter: Indexed Node: Space(s) */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['arguments']['og_group_ref']['field'] = 'og_group_ref';
@@ -143,6 +143,10 @@ function hr_indicators_views_default_views() {
     2 => '2',
     1 => 0,
     30037204 => 0,
+    200153887 => 0,
+    218860149 => 0,
+    188284353 => 0,
+    235660466 => 0,
   );
 
   /* Display: Table */
@@ -253,6 +257,11 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['fields']['field_ind_guidance_phases']['id'] = 'field_ind_guidance_phases';
   $handler->display->display_options['fields']['field_ind_guidance_phases']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_ind_guidance_phases']['field'] = 'field_ind_guidance_phases';
+  /* Field: Indexed Node: Phase applicability */
+  $handler->display->display_options['fields']['field_ind_phase_applicability']['id'] = 'field_ind_phase_applicability';
+  $handler->display->display_options['fields']['field_ind_phase_applicability']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_ind_phase_applicability']['field'] = 'field_ind_phase_applicability';
+  $handler->display->display_options['fields']['field_ind_phase_applicability']['delta_offset'] = '0';
   /* Field: Indexed Node: General guidance */
   $handler->display->display_options['fields']['field_ind_general_guidance']['id'] = 'field_ind_general_guidance';
   $handler->display->display_options['fields']['field_ind_general_guidance']['table'] = 'search_api_index_default_node_index';
@@ -277,7 +286,7 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['fields']['field_ind_cross_tagging']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_ind_cross_tagging']['bypass_access'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Indexed Node: Groups audience */
+  /* Contextual filter: Indexed Node: Space(s) */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['arguments']['og_group_ref']['field'] = 'og_group_ref';
@@ -404,6 +413,11 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['fields']['field_ind_guidance_phases']['id'] = 'field_ind_guidance_phases';
   $handler->display->display_options['fields']['field_ind_guidance_phases']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_ind_guidance_phases']['field'] = 'field_ind_guidance_phases';
+  /* Field: Indexed Node: Phase applicability */
+  $handler->display->display_options['fields']['field_ind_phase_applicability']['id'] = 'field_ind_phase_applicability';
+  $handler->display->display_options['fields']['field_ind_phase_applicability']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_ind_phase_applicability']['field'] = 'field_ind_phase_applicability';
+  $handler->display->display_options['fields']['field_ind_phase_applicability']['delta_offset'] = '0';
   /* Field: Indexed Node: General guidance */
   $handler->display->display_options['fields']['field_ind_general_guidance']['id'] = 'field_ind_general_guidance';
   $handler->display->display_options['fields']['field_ind_general_guidance']['table'] = 'search_api_index_default_node_index';
@@ -437,7 +451,7 @@ function hr_indicators_views_default_views() {
   $handler->display->display_options['fields']['url']['display_as_link'] = FALSE;
   $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Indexed Node: Groups audience */
+  /* Contextual filter: Indexed Node: Space(s) */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['arguments']['og_group_ref']['field'] = 'og_group_ref';
@@ -487,6 +501,7 @@ function hr_indicators_views_default_views() {
     t('Standards'),
     t('Threshold'),
     t('Guidance on phases'),
+    t('Phase applicability'),
     t('General guidance'),
     t('Guidance for pre-crisis/baseline'),
     t('Comments'),

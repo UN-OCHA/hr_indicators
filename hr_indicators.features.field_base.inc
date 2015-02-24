@@ -399,6 +399,41 @@ function hr_indicators_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_ind_phase_applicability'
+  $field_bases['field_ind_phase_applicability'] = array(
+    'active' => 1,
+    'cardinality' => 6,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ind_phase_applicability',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'All Phases' => 'All Phases',
+        'Pre-crisis-Baseline' => 'Pre-crisis/Baseline',
+        'Phase1' => 'Phase 1',
+        'Phase2' => ' Phase 2',
+        'Phase3' => 'Phase 3',
+        'Phase4' => 'Phase 4',
+      ),
+      'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_ind_response'
   $field_bases['field_ind_response'] = array(
     'active' => 1,

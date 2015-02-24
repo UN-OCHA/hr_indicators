@@ -125,7 +125,7 @@ function hr_indicators_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -160,7 +160,7 @@ function hr_indicators_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 19,
+      'weight' => 20,
     ),
   );
 
@@ -179,7 +179,7 @@ function hr_indicators_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -223,7 +223,7 @@ function hr_indicators_field_default_field_instances() {
         ),
       ),
       'type' => 'taxonomy_shs',
-      'weight' => 21,
+      'weight' => 22,
     ),
   );
 
@@ -239,7 +239,7 @@ function hr_indicators_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -274,7 +274,7 @@ function hr_indicators_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 20,
+      'weight' => 21,
     ),
   );
 
@@ -490,7 +490,7 @@ function hr_indicators_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -506,7 +506,7 @@ function hr_indicators_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -541,7 +541,7 @@ function hr_indicators_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -694,6 +694,50 @@ function hr_indicators_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-hr_indicator-field_ind_phase_applicability'
+  $field_instances['node-hr_indicator-field_ind_phase_applicability'] = array(
+    'bundle' => 'hr_indicator',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 16,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ind_phase_applicability',
+    'label' => 'Phase applicability',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 17,
     ),
   );
 
@@ -1080,7 +1124,7 @@ function hr_indicators_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1139,7 +1183,7 @@ function hr_indicators_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 22,
+      'weight' => 23,
     ),
   );
 
@@ -1154,7 +1198,7 @@ function hr_indicators_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1356,6 +1400,7 @@ function hr_indicators_field_default_field_instances() {
   t('Key indicator');
   t('Name');
   t('Numerator');
+  t('Phase applicability');
   t('Sector cross-tagging');
   t('Space(s)');
   t('Standards');

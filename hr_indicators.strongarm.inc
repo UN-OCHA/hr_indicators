@@ -54,13 +54,13 @@ function hr_indicators_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '24',
+          'weight' => '25',
         ),
         'redirect' => array(
-          'weight' => '23',
+          'weight' => '24',
         ),
         'language' => array(
-          'weight' => '-10',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
